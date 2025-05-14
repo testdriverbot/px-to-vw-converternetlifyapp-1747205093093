@@ -1,0 +1,27 @@
+version: 4.2.29
+session: 68243f43a8c2f5886f8c87c2
+steps:
+  - prompt: Enter valid CSS code and perform a conversion.
+    commands:
+      - command: hover-text
+        text: 请输入地址或粘贴的CSS代码...
+        description: CSS input area
+        action: click
+      - command: type
+        text: 'body { font-size: 16px; }'
+      - command: hover-text
+        text: 转换
+        description: conversion button
+        action: click
+  - prompt: Enter valid CSS code and perform a conversion.
+    commands:
+      - command: hover-text
+        text: 转换
+        description: conversion button
+        action: click
+  - prompt: Click the "复制结果"
+    commands:
+      - command: hover-text
+        text: 复制结果
+        description: copy result button
+        action: click
