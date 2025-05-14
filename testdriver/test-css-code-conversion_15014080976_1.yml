@@ -1,0 +1,21 @@
+version: 4.2.29
+session: 68243f42a8c2f5886f8c87c0
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Enter valid CSS code in the input area.
+    commands:
+      - command: hover-text
+        text: 请输入地址或粘贴的CSS代码...
+        description: CSS input area
+        action: click
+      - command: type
+        text: 'body { background-color: #f0f0f0; }'
+  - prompt: Click the "转换"
+    commands:
+      - command: hover-text
+        text: 转换
+        description: conversion button below the input area
+        action: click
