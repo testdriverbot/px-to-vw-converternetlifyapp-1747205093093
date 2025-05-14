@@ -1,0 +1,24 @@
+version: 4.2.29
+session: 68243f4358a65c2836a75408
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Enter invalid design width in the input field.
+    commands:
+      - command: hover-text
+        text: 设计稿宽度 (px)
+        description: label for design width input field
+        action: click
+      - command: press-keys
+        keys:
+          - tab
+      - command: type
+        text: '-100'
+  - prompt: Click the "转换"
+    commands:
+      - command: hover-text
+        text: 转换
+        description: conversion button at the bottom of the page
+        action: click
