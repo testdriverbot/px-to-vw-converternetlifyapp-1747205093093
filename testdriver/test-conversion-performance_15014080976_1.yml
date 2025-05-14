@@ -1,0 +1,23 @@
+version: 4.2.29
+session: 68243f5fa8c2f5886f8c87d8
+steps:
+  - prompt: Enter a large block of CSS code.
+    commands:
+      - command: hover-text
+        text: 请输入地址或粘贴您的CSS代码...
+        description: CSS input area on the webpage
+        action: click
+      - command: type
+        text: >-
+          body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+          .container { width: 100%; max-width: 1200px; margin: 0 auto; padding:
+          20px; } header { background-color: #333; color: #fff; padding: 10px 0;
+          } nav ul { list-style: none; padding: 0; } nav ul li { display:
+          inline-block; margin-right: 10px; } nav ul li a { color: #fff;
+          text-decoration: none; }
+  - prompt: Click the "转换"
+    commands:
+      - command: hover-text
+        text: 转换
+        description: conversion button below the CSS input area
+        action: click
